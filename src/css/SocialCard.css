@@ -1,0 +1,68 @@
+/* From Uiverse.io by faxriddin20 */ 
+.SocialCard {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  color: white;
+}
+
+.containerOne:hover {
+  background-color: #ef4c2d;
+  transition-duration: 0.3s;
+}
+
+.containerTwo:hover {
+  background: linear-gradient(to bottom, #476ecf, #102384);
+  transition-duration: 0.3s;
+}
+
+.containerThree:hover {
+  background-color: #0966fe;
+  transition-duration: 0.3s;
+}
+
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+}
+
+.socialContainer:hover .social {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

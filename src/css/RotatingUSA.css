@@ -1,0 +1,60 @@
+.RotatingUSA{
+  padding: 30px 0 50px 0;
+}
+
+.RotatingUSA .rotating-container{
+  width: 250px;
+  height: 320px;
+  text-align: center;
+  padding: 1rem;
+}
+.RotatingUSA .coin {
+  font-size: 200px;
+  width: 0.1em;
+  height: 1em;
+  background: linear-gradient(#fa0404, #141001);
+  margin: auto;
+  animation: rotate_4001510 9s infinite linear;
+  transform-style: preserve-3d;
+  margin-bottom: 20px;
+}
+
+.RotatingUSA .coin .side, .coin:before,.RotatingUSA  .coin:after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  border-radius: 50%;
+  right: -0.4em;
+  text-align: center;
+  line-height: 1;
+  transform: rotateY(-90deg);
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: url("../img/LegitImgs/made-in-usa.png")no-repeat center center;
+  background-size: cover;
+}
+
+.RotatingUSA .coin .tails,.RotatingUSA  .coin:after {
+  left: -0.4em;
+  transform: rotateY(90deg);
+}
+
+.RotatingUSA .coin:before,.RotatingUSA  .coin:after {
+  background: linear-gradient(#fa0404, #141001);
+  backface-visibility: hidden;
+  transform: rotateY(90deg);
+}
+
+.RotatingUSA .coin:after {
+  transform: rotateY(-90deg);
+}
+
+@keyframes rotate_4001510 {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
